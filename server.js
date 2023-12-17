@@ -45,11 +45,11 @@ cron.schedule('0 12 * * *', async () => {
     scheduleNotifications(upcomingBills);
     let message = {
       notification: {
-        title: "You have notification from Bill Due",
+        title: "You have notification from Bll Due",
         body: body,
       },
       token: bill.fcm_token,
-    };
+    }; 
     FCM.send(message, function (err, resp) {
       if (err) {
         console.log(err);
