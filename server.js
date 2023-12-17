@@ -45,7 +45,7 @@ cron.schedule('0 12 * * *', async () => {
     scheduleNotifications(upcomingBills);
     let message = {
       notification: {
-        title: "You have notification from Bll Due",
+        title: "You have notification from Bill Due",
         body: body,
       },
       token: bill.fcm_token,
